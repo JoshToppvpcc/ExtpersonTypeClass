@@ -26,11 +26,14 @@
     <ClInclude Include="extPersonType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="addressType.h">
+    <ClInclude Include="addressBookType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="personType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="addressBookData.txt" />
   </ItemGroup>
 </Project>

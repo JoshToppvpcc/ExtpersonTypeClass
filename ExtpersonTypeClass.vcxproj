@@ -130,10 +130,13 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="addressType.h" />
+    <ClInclude Include="addressBookType.h" />
     <ClInclude Include="dateType.h" />
     <ClInclude Include="extPersonType.h" />
     <ClInclude Include="personType.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="addressBookData.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
