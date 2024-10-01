@@ -43,6 +43,7 @@ public:
             std::istringstream iss(line);
             std::string fName, lName, rel;
             int month, day, year;
+            std::string streetAddress, city, state, zipCode, phoneNumber;
 
             // Parse the line into variables
             if (!(iss >> fName >> lName >> rel >> month >> day >> year)) {
@@ -51,7 +52,7 @@ public:
             }
 
             dateType birthDate(month, day, year);
-            extPersonType newPerson(fName, lName, rel, birthDate);
+            extPersonType newPerson( fName, lName, rel, birthDate,streetAddress, city, state, zipCode, phoneNumber);
             addEntry(newPerson);  // Add to addressList array
             std::cout << "Entry added: " << fName << " " << lName << std::endl;  // Debug output
         }
@@ -91,6 +92,12 @@ public:
             }
         }
     }
+    //void printStreet(const std::string& street) const {
+      //  for (int i = 0; i < length; i++) {
+        //    (addressList[i].getStreetAddress());
+          //  addressList[i].print();
+        //}
+    //} DIdnt work
 
     // Function to find people by relationship
     void findRelations(const std::string& rel) const {
